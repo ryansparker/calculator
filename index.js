@@ -8,6 +8,8 @@ let btnSub =  document.getElementById('btn-sub');
 let btnDiv = document.getElementById('btn-div');
 let btnMult =  document.getElementById('btn-mult');
 
+let sumEl = document.getElementById('sum-el')
+
 
 
 // Create four functions: add(), subtract(), divide(), multiply()
@@ -18,18 +20,17 @@ let btnMult =  document.getElementById('btn-mult');
 // E.g. if the user clicks on the "Plus" button, you should render
 // "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
 btnAdd.addEventListener('click', () => {
-console.log(num1 + num2)
+sumEl.innerText= "Sum: " + num1 + num2;
 });
 
-
 btnSub.addEventListener('click', () => {
-	console.log(num1 - num2)
+	sumEl.innerText= "Sum: " + (num1 - num2);
 });
 
 btnDiv.addEventListener('click', () => {
-	console.log(num1 / num2)
+	sumEl.innerText= "Sum: " + num1 / num2;
 });
 
 btnMult.addEventListener('click', () => {
-	console.log(num1 * num2)
+	sumEl.innerText= "Sum: " + num1 * num2;
 });
